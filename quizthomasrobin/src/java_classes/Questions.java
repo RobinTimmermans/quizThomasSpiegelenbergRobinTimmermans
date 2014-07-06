@@ -30,16 +30,16 @@ public class Questions {
 	public static String getCorrectAnswer() {
 		initialize();
 		switch (number) {
-			case 1: return "A";
+			case 1: return "1";
 			case 2: return "/";
 			case 3: return "/";
-			case 4: return "D";
+			case 4: return "4";
 			case 5: return "/";
 			case 6: return "/";
-			case 7: return "B";
-			case 8: return "A";
+			case 7: return "2";
+			case 8: return "1";
 			case 9: return "/";
-			case 10: return "D";
+			case 10: return "4";
 			default: return "X";
 		}
 	}
