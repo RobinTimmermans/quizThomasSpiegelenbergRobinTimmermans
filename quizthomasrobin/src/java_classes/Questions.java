@@ -14,14 +14,14 @@ public class Questions {
 	private static String getQuestion(int number) {	
 		switch (number) {
 		case 1: return "Waarvoor staat de afkorting 'SQL'?";
-		case 2: return "Uit 4 van deze keuze, is er een fout als het gaat om de term LAN. Welke is dat?";
-		case 3: return "welke cache staat te om lookup cache te delen over meerdere transacties?";
+		case 2: return "Clojure is een vorm van?";
+		case 3: return "Een LAN netwerk is?";
 		case 4: return "Het hexadecimale talstelsel beschikt over ... mogelijkheden om een cijfer te noteren:";
-		case 5: return "Wat betekent de afkorting 'GUI'?";
+		case 5: return "Wat is een 'container' object in GUI programmeren?";
 		case 6: return "Een byte bestaat uit ... bits:";
 		case 7: return "Een XOF-schakeling geeft 1 terug als beide schakelaars in een verschillende stand staan.";
-		case 8: return "kan je een batch starten vanuit een batch?";
-		case 9: return "welke lookup cache is read-only?";
+		case 8: return "Is het mogelijk een batch te runnen vanuit een batch?";
+		case 9: return "In welke van de onderstaande taal wordt er multiple inheritance toegestaan";
 		case 10: return "5 wordt in het talstelsel dat de computer gebruikt geschreven als:";
 		default: return "A";
 	}
@@ -31,14 +31,14 @@ public class Questions {
 		initialize();
 		switch (number) {
 			case 1: return "1";
-			case 2: return "/";
-			case 3: return "/";
+			case 2: return "3";
+			case 3: return "2";
 			case 4: return "4";
-			case 5: return "/";
-			case 6: return "/";
+			case 5: return "4";
+			case 6: return "1";
 			case 7: return "2";
 			case 8: return "1";
-			case 9: return "/";
+			case 9: return "3";
 			case 10: return "4";
 			default: return "X";
 		}
@@ -73,8 +73,10 @@ public class Questions {
 	}
 
 	private String optionsQuestion9() {
-		// TODO Auto-generated method stub
-		return "";
+		return "Java"
+				+ "C-Sharp"
+				+ "C++"
+				+ "Clojure";
 	}
 
 	private String optionsQuestion10() {
@@ -82,8 +84,7 @@ public class Questions {
 	}
 
 	private String optionsQuestion8() {
-		// TODO Auto-generated method stub
-		return "";
+		return "Ja / Nee";
 	}
 
 	private String optionsQuestion6() {
@@ -91,8 +92,10 @@ public class Questions {
 	}
 
 	private String optionsQuestion5() {
-		// TODO Auto-generated method stub
-		return "";
+		return "Een soort voor een ArrayList"
+				+ "Een klasse die bestaat uit andere klassen"
+				+ "een primitieve die data bevat"
+				+ "een object zoals waarop andere GUI componenten geplaatst kunnen worden";
 	}
 
 	private String optionsQuestion4() {
@@ -100,13 +103,17 @@ public class Questions {
 	}
 
 	private String optionsQuestion3() {
-		// TODO Auto-generated method stub
-		return "";
+		return "Een draadloos netwerk"
+				+ "Een lokaal netwerk vaak binnen een gebouw of complex"
+				+ "Een groot netwerk dat zich niet beperkt tot een gebouw of complex"
+				+ "Geen van bovenstaande";
 	}
 
 	private String optionsQuestion2() {
-		// TODO Auto-generated method stub
-		return "";
+		return "Object geörienteerd programmeren"
+				+ "test gedreven programmeren"
+				+ "Functioneel programmeren"
+				+ "Lineair programmeren";
 	}
 
 	private String optionsQuestion1() {
