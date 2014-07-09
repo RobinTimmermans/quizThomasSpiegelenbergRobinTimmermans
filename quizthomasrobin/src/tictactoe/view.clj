@@ -20,7 +20,7 @@
   [:p
    [:ol
     (for [item answerlist]
-      [:li item])
+      [:li [:button#answer-button item]])
   ]])
 
 (defn cell-html [rownum colnum cell with-submit?] 
@@ -49,10 +49,11 @@
      (current-question (clojure.string/join ["<b>Vraag " @model/question ".</b><hr>" (model/make-question)]))
      (generate-options (model/get-options))
      (generate-options-panel (model/get-options-panel))
-    ; [:p 
-    ;  "Correct answers: " @model/good-answers "<br />"
-      ;"Wrong answers: " @model/wrong-answers
-     ;]
+     [:p 
+      "Tot nu toe goed: " @model/good-answers "<br />"
+     "Vraag  uit  : " @model/total-questions
+     ]
+     [:button#engdoei "LOLNEE"]
      ]))
 
 

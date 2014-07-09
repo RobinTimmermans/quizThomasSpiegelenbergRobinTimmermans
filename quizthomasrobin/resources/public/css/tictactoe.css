@@ -25,7 +25,9 @@ div#wrapper
 	width: 480px;
 	padding: 15px;
 	border: 1px solid;
-	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 	box-shadow: 5px 5px 5px #888;
 	background-color: #white;
 	color:#666;
@@ -49,6 +51,18 @@ div#wrapper a
 
 #main-message {
 	text-align: center;
+	font-family: Helvetica, Arial, Sans-Serif;
+	color:#666;
+}
+
+#answer-button {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 100%;
+	padding: 10px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 div#wrapper a:hover
