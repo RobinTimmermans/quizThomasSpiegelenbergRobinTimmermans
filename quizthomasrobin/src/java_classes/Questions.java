@@ -73,10 +73,10 @@ public class Questions {
 	}
 
 	private String optionsQuestion9() {
-		return "Java"
-				+ "C-Sharp"
-				+ "C++"
-				+ "Clojure";
+		return "Java /"
+				+ "C# /"
+				+ "C++ /"
+				+ "Clojure /";
 	}
 
 	private String optionsQuestion10() {
@@ -92,10 +92,10 @@ public class Questions {
 	}
 
 	private String optionsQuestion5() {
-		return "Een soort voor een ArrayList"
-				+ "Een klasse die bestaat uit andere klassen"
-				+ "een primitieve die data bevat"
-				+ "een object zoals waarop andere GUI componenten geplaatst kunnen worden";
+		return "Een soort voor een ArrayList /"
+				+ "Een klasse die bestaat uit andere klassen /"
+				+ "Een primitieve die data bevat /"
+				+ "Een object zoals waarop andere GUI componenten geplaatst kunnen worden /";
 	}
 
 	private String optionsQuestion4() {
@@ -103,17 +103,17 @@ public class Questions {
 	}
 
 	private String optionsQuestion3() {
-		return "Een draadloos netwerk"
-				+ "Een lokaal netwerk vaak binnen een gebouw of complex"
-				+ "Een groot netwerk dat zich niet beperkt tot een gebouw of complex"
-				+ "Geen van bovenstaande";
+		return "Een draadloos netwerk /"
+				+ "Een lokaal netwerk vaak binnen een gebouw of complex /"
+				+ "Een groot netwerk dat zich niet beperkt tot een gebouw of complex /"
+				+ "Geen van bovenstaande /";
 	}
 
 	private String optionsQuestion2() {
-		return "Object geörienteerd programmeren"
-				+ "test gedreven programmeren"
-				+ "Functioneel programmeren"
-				+ "Lineair programmeren";
+		return "Object geörienteerd programmeren /"
+				+ "Test-gedreven programmeren /"
+				+ "Functioneel programmeren /"
+				+ "Lineair programmeren /";
 	}
 
 	private String optionsQuestion1() {

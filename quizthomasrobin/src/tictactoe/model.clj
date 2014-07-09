@@ -8,12 +8,18 @@
 (defn make-question []
   (Questions/getQuestion))
 
+(def good-answers (atom 0))
+(def wrong-answers (atom 0))
+
 (def question (atom 0))
+(def question-answer (atom {}))
+(def total-questions (atom 10))
 
 (defn get-options-panel []
   (:answers (session/get :game-state)))
 
-(def question-answer (atom {}))
+(defn inc-questionnumber []
+  (swap! question inc))
 
 (defn get-options []
   (swap! question-answer assoc :Answer (Questions/getCorrectAnswer))

@@ -8,7 +8,7 @@
 (defhtml layout [& content]
   (html5
    [:head
-    [:title "The game!"]
+    [:title "The Game!"]
     (include-css "/css/tictactoe.css")]   
    [:body [:h1#main-message "Welkom bij de opperquiz!"][:div#wrapper content]]))
 
