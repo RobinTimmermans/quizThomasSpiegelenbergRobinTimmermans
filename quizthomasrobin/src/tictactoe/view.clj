@@ -9,8 +9,8 @@
   (html5
    [:head
     [:title "The game!"]
-    (include-css "/css/tictactoe.css")]
-   [:body [:div#wrapper content]]))
+    (include-css "/css/tictactoe.css")]   
+   [:body [:h1#main-message "Welkom bij de opperquiz!"][:div#wrapper content]]))
 
 (defn current-question [question]
   [:p (str question)
@@ -46,7 +46,7 @@
 (defn play-screen []
   (layout
     [:div 
-     (current-question (clojure.string/join ["Vraag " @model/question ".<br />" (model/make-question)]))
+     (current-question (clojure.string/join ["<b>Vraag " @model/question ".</b><hr>" (model/make-question)]))
      (generate-options (model/get-options))
      (generate-options-panel (model/get-options-panel))
     ; [:p 
