@@ -8,7 +8,7 @@
   :ring {:handler tictactoe.handler/war-handler}
   :profiles {:production
              {:ring
-              {:open-browser? false, :stacktraces? false, :auto-reload? false}}}
+              {:open-browser? false, :stacktraces? false, :auto-reload? true}}}
   :plugins [[lein-ring "0.8.3"]]
     :java-source-paths ["src/java_classes"]
   :min-lein-version "2.0.0")
