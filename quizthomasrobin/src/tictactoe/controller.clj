@@ -25,7 +25,6 @@
       (defn answer [button]
   (println button)
   (let [button-id (name (first (keys button)))]
-<snip>
  ))
 
 (defn turn-page [button-pressed]
