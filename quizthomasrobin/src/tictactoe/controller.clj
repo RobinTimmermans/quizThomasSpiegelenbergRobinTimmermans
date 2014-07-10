@@ -10,8 +10,8 @@
 
 (defn answer [button]
   (let [button-id (name (first (keys button)))]
-    ;(model/v-answer
-    ;  (clojure.string/split button-id #"Answer")))
+    (model/v-answer
+      (clojure.string/split button-id #"Answer"))
     ;(if (> @model/wrong-answers 2)
     ;  (view/lose-screen)
     ;  (if (> (model/inc-questionnumber) 10)
