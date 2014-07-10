@@ -1,3 +1,6 @@
+body {
+	background-image: url('../images/matrix.bmp');
+}
 
 div#wrapper p {
 	font-size:15px;
@@ -29,7 +32,7 @@ div#wrapper
     -moz-border-radius: 10px;
     border-radius: 10px;
 	box-shadow: 5px 5px 5px #888;
-	background-color: #white;
+	background-color: rgba(255, 255, 255, 0.9);
 	color:#666;
 	margin: 0 auto; 
 	top: 200px; 
@@ -52,7 +55,7 @@ div#wrapper a
 #main-message {
 	text-align: center;
 	font-family: Helvetica, Arial, Sans-Serif;
-	color:#666;
+	color: white;
 }
 
 #answer-button {

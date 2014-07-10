@@ -20,12 +20,16 @@
   [:p
    [:ol
     (for [item answerlist]
-      [:li [:button#answer-button item]])
+      [:li [:button {:name (str "answer" (swap! model/buttonNumber inc))
+                     :value @model/buttonNumber
+                     :type "submit" 
+                     } 
+            item]])    
   ]])
 
 (defn cell-html [rownum colnum cell with-submit?] 
   [:td 
-   [:input {:name (str "Answer" cell) 
+   [:input {:name (str "answer" cell) 
             :value (str cell)
             :type (if with-submit? 
                     "submit" 
@@ -51,9 +55,7 @@
      (generate-options-panel (model/get-options-panel))
      [:p 
       "Tot nu toe goed: " @model/good-answers "<br />"
-     "Vraag  uit  : " @model/total-questions
-     ]
-     [:button#engdoei "LOLNEE"]
-     ]))
+     "Vraag " (- @model/question 1) " uit " @model/total-questions
+     ]]))
 
 
