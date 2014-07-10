@@ -17,15 +17,15 @@
    ])
 
 (defn generate-options [answerlist]
-  [:p
+  (form-to [:post "/"]
    [:ol
-    (for [item answerlist]
-      [:li [:button {:name (str "answer" (swap! model/buttonNumber inc))
-                     :value @model/buttonNumber
-                     :type "submit" 
-                     } 
-            item]])    
-  ]])
+   (for [item answerlist]
+     [:li [:button {:name (str "answer" (swap! model/buttonNumber inc))
+                    :value @model/buttonNumber
+                    :type "submit" 
+                    } 
+           item]])   
+  ]))
 
 (defn cell-html [rownum colnum cell with-submit?] 
   [:td 
@@ -58,4 +58,16 @@
      "Vraag " (- @model/question 1) " uit " @model/total-questions
      ]]))
 
+(defn lose-screen []
+  (layout
+    [:div 
+     [:p "Je hebt drie antwoorden fout en dus verloren. Jammer joh!"]
+     ]
+     (link-to "/" "Restart")))
 
+(defn win-screen []
+  (layout
+    [:div
+     [:p "Damn! Je hebt gewonnen!"]
+     ]
+    (link-to "/" "Restart")))

@@ -8,26 +8,22 @@
   (model/reset-game!)
   (view/play-screen))
 
-;(defn answer [button]
-  ;(let [button-id (name (first (keys button)))]
-    ;(model/check-answer
-    ;  (clojure.string/split button-id #"answer"))
-    ;(println button)
-    
-    
-    ;(if (> @model/wrong-answers 2)
-    ;  (view/lose-screen)
-    ;  (if (> (model/inc-questionnumber) 10)
-     ;        (view/win-screen)
-      ;      (view/play-screen) 
-      ;))
-      ;))
-      (defn answer [button]
-  (println button)
-  (let [button-id (name (first (keys button)))]
- ))
+(defn answer [button]
+ (let [button-id (name (first (keys button)))]
+ (model/check-answer
+ (clojure.string/split button-id #"answer"))
+ (println button)
+ (view/play-screen)    
+    (if (> @model/wrong-answers 3)
+      (view/lose-screen)
+     (if (> (model/inc-questionnumber) 10)
+          (view/win-screen)
+         (view/play-screen) 
+     ))
+   ))
 
-(defn turn-page [button-pressed]
+
+(defn turn-page [button]
   (model/reset-game!)
   (view/play-screen))
 
